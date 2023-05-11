@@ -35,7 +35,7 @@
       "react-app/jest"
     ]
   },
-  "proxy": "http://localhost",
+  "proxy": "https://still-basin-52234.herokuapp.com",
   "browserslist": {
     "production": [
       ">0.2%",
