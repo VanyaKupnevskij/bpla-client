@@ -24,7 +24,7 @@ export default function SignIn() {
     const form = new FormData(event.currentTarget);
 
     try {
-      const data = await request('/api/auth/login', 'POST', {
+      const data = await request('https://still-basin-52234.herokuapp.com/api/auth/login', 'POST', {
         email: form.get('email'),
         password: form.get('password'),
       });
