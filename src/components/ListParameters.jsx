@@ -48,7 +48,7 @@ export default function ListParameters({ datas, skipParameters = [] }) {
                 {value}
               </Link>
             ) : (
-              <Typography variant="caption" sx={{ maxWidth: '70%' }}>
+              <Typography variant="caption" sx={{ maxWidth: '70%', textAlign: 'end' }}>
                 {value}
               </Typography>
             )}

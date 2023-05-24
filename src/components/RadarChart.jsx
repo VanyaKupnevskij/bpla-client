@@ -39,6 +39,9 @@ let settings = {
           size: 14,
         },
       },
+      grid: {
+        color: 'blue',
+      },
     },
   },
 };
