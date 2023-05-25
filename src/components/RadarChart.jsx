@@ -1,4 +1,4 @@
-import { Box, Checkbox, FormControlLabel, FormGroup, Typography } from '@mui/material';
+import { Box, Typography } from '@mui/material';
 import {
   Chart as ChartJS,
   RadialLinearScale,
@@ -33,16 +33,40 @@ let settings = {
   scales: {
     r: {
       //   type: 'logarithmic',
-      ticks: {
-        stepSize: 200,
-        font: {
-          size: 14,
-        },
-      },
       grid: {
         color: 'blue',
       },
+      angleLines: {
+        color: 'rgb(59, 62, 218)',
+      },
+      ticks: {
+        color: 'black',
+        backdropColor: 'white',
+        stepSize: 200,
+        font: {
+          size: 16,
+          family: 'Arial',
+          weight: '600',
+        },
+        major: {
+          enabled: true,
+        },
+      },
     },
+    yAxes: [
+      {
+        gridLines: {
+          color: 'green',
+        },
+      },
+    ],
+    xAxes: [
+      {
+        gridLines: {
+          color: 'red',
+        },
+      },
+    ],
   },
 };
 
