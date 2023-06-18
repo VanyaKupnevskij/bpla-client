@@ -71,12 +71,12 @@ export default function DoubleSlider({ name, min = 0, max = 100, step = 10, coun
           size="small">
           <OutlinedInput
             id="outlined-adornment-weight"
-            endAdornment={<InputAdornment position="end">км</InputAdornment>}
+            endAdornment={<InputAdornment position="end"></InputAdornment>}
             aria-describedby="outlined-weight-helper-text"
             value={value[0]}
             onChange={(event) => handleChange(event, [parseInt(event.target.value), value[1]], 0)}
             inputProps={{
-              'aria-label': 'км',
+              'aria-label': '',
             }}
           />
           <FormHelperText id="outlined-weight-helper-text">Від</FormHelperText>
@@ -89,12 +89,12 @@ export default function DoubleSlider({ name, min = 0, max = 100, step = 10, coun
           size="small">
           <OutlinedInput
             id="outlined-adornment-weight"
-            endAdornment={<InputAdornment position="end">км</InputAdornment>}
+            endAdornment={<InputAdornment position="end"></InputAdornment>}
             aria-describedby="outlined-weight-helper-text"
             value={value[1]}
             onChange={(event) => handleChange(event, [value[0], parseInt(event.target.value)], 1)}
             inputProps={{
-              'aria-label': 'км',
+              'aria-label': '',
             }}
           />
           <FormHelperText id="outlined-weight-helper-text">До</FormHelperText>
