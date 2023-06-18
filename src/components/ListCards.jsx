@@ -32,7 +32,7 @@ export default function ListCards({ onCountTotal, sx }) {
   if (bplas.length === 0) {
     return (
       <Typography variant="h4" color="Highlight" textAlign="center" sx={sx}>
-        За заданними параметрами не знайдено жодного БпЛА :(
+        За заданними параметрами не знайдено жодного БпЛА !
       </Typography>
     );
   }
